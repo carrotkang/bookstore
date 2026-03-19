@@ -1,0 +1,505 @@
+@charset "utf-8";
+
+.container {
+    width: 931px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+}
+
+
+#header_top {
+    width: 100%;
+    height: 55px;
+    /* background-color: #eee; */
+}
+
+#login {
+    width: 320px;
+    height: 35px;
+    /* background-color: green; */
+    align-items: end;
+    display: flex;
+}
+
+#search {
+    height: 26px;
+    background-color: #c7bdbd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#search img {
+    width: 20px;
+    height: 20px;
+}
+
+#search_box:focus {
+    outline: none;
+}
+
+#search_box {
+    background-color: #c7bdbd;
+    border-width: 0;
+}
+
+#logo {
+    width: 65px;
+    height: 25px;
+    margin-left: 7px;
+    text-align: center;
+}
+
+#header_bottom {
+    width: 100%;
+    height: 55px;
+    /* background-color: tomato; */
+    display: flex;
+}
+
+#header_top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_bottom .container nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.list {
+    display: flex;
+}
+
+#main_content {
+    width: 931px;
+    margin: 0 auto;
+
+    /* height: 3915px; */
+    /* background-color: #e6dbdb; */
+}
+
+#nav_main {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+#slide_1 {
+    width: 931px;
+    height: 340px;
+    margin: 0 auto;
+}
+
+/* 스와이퍼에서 가져온 css */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 스와이퍼에서 가져온 2번째 scc */
+#slide_2 .swiper {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+#slide_2 .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #333;
+      height: calc((100% - 20px) / 3) !important;
+
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+/* 스와이퍼에서 가져온 3번째 */
+/* 정해진 영영보다 크게 100%를 주게되면 제목자리 때문에 그만큼 밀려서 표현, 그래서 90%를 줌    */
+#today_ridi .swiper{
+    height: 90%;
+}
+
+#now_ridi_title{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#now_ridi_content .swiper{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#icon_main {
+    width: 100%;
+    height: 140px;
+    display: flex;
+}
+
+#icon_main ul {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+#icon_main li {
+    margin: 10px;
+}
+
+#icon_main li img {
+    height: 70px;
+    width: 70px;
+}
+
+#icon_main li span {
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+#slide_2 {
+    width: 100%;
+    height: 310px;
+    margin-bottom: 35px;
+}
+
+#today_ridi {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+
+
+#best {
+    width: 931px;
+    height: 395px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#best .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#best_title{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+/* 사이즈가 작아서 생긴 문제 */
+#best_content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 931px;
+    height: 330px;
+    justify-content: space-around;
+
+}
+
+#best .best{
+    display: flex;
+    width: 33%;
+    height: 100px;
+    background-color: blue;
+    margin-top: 3px;
+}
+
+
+
+#new_ridi {
+    width: 100%;
+    height: 260px;
+}
+
+#new_ridi_contnet{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#new_ridi_contnet .new_ridi{
+    width: 33%;
+    height: 85%;
+    background-color: blue;
+}
+
+
+
+
+#new {
+    width: 100%;
+    height: 370px;
+}
+
+#new .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#new_title {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#new .swiper{
+    height: 90%;
+}
+
+#best_inweek_content .swiper{
+    height: 90%;
+}
+
+
+#space {
+    width: 100%;
+    height: 465px;
+}
+
+#space_title{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#space_content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 931px;
+    height: 430px;
+    justify-content: space-around;
+
+}
+
+#space .space{
+    display: flex;
+    width: 19%;
+    height: 100%;
+}
+
+#space_content div:nth-child(1){
+    background-image: url("../img/space_1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#space_content div:nth-child(2){
+    background-image: url("../img/space_2.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#space_content div:nth-child(3){
+    background-image: url("../img/space_3.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#space_content div:nth-child(4){
+    background-image: url("../img/space_4.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#space_content div:nth-child(5){
+    background-image: url("../img/space_5.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#best_inweek {
+    width: 100%;
+    height: 375px;
+}
+
+#best_inweek_title{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+#best_inweek_content{
+    width: 100%;
+    height: 100%;
+}
+#best_inweek_content .swiper-slide{
+    height: 100%;
+}
+
+
+#event {
+    width: 100%;
+    height: 135px;
+}
+
+
+#event_title{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#event_content{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event_content{
+    width: 33%;
+    height: 100%;
+    position: relative;
+}
+
+.image_txt_1{
+    top: 7%;
+    left:4%;
+    color: white;
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.image_txt_2{
+    top: 60%;
+    left: 4%;
+    color: #c7bdbd;
+    position: absolute;
+    font-size: 7px;
+}
+.image_txt_3{
+    top: 30%;
+    left: 4%;
+    color: white;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.event_content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #430784;
+}
+
+
+#now_ridi {
+    width: 100%;
+    height: 420px;
+}
+
+#now_ridi .swiper-wrapper{
+    width:931px;
+    height: 100%;
+}
+
+#now_ridi_content{
+    height: 100%;
+}
+
+#now_ridi_content .swiper-slide{
+    height: 90%;
+}
+
+footer {
+    width: 931px;
+    height: 200px;
+    /* background-color: #d17070; */
+    margin: 0 auto;
+}
+
+#footer_top {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_left {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_bottom {
+    width: 100%;
+    height: 70px;
+    /* background-color: #eee; */
+}
+
+#footer_left {
+    font-size: 12px;
+}
+
+#footer_bottom {
+    font-size: 12px;
+}
+
+#copyright {
+    display: flex;
+}
+
+#copyright li {
+    padding: 0px 10px;
+}
+
+.list li {
+    padding: 0px 10px;
+}
+
+#ridi_inform {
+    border: none;
+    background-color: white;
+}
