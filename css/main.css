@@ -11,6 +11,18 @@ header {
     height: 110px;
 }
 
+nav ul li:hover{
+    background-color: #1e9eff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav ul li:hover a{color: white;}
+
+nav ul li{
+    font-size: 16px;
+    padding: 5px 10px;
+}
 
 #header_top {
     width: 100%;
@@ -94,7 +106,6 @@ header {
 
 #nav_main {
     width: 100%;
-    height: 50px;
     display: flex;
 }
 
@@ -183,6 +194,7 @@ header {
 }
 
 .slide_2_content_title h5 {
+    font-size: 18px;
     overflow: hidden;
     /* 있어야 가려짐 */
     text-align: left;
@@ -209,7 +221,8 @@ header {
     /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
 }
 
-.slide_2_content_content_2 p {
+.slide_2_content .slide_2_content_content p{
+    font-size: 18px;
     overflow: hidden;
     /* 있어야 가려짐 */
     text-align: left;
@@ -220,6 +233,20 @@ header {
 
     white-space: nowrap;
     /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/}
+
+    .slide_2_content .slide_2_content_content_2 p{
+    font-size: 15px;
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    text-align: left;
+    width: 174px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/}
+
 
 /* 스와이퍼에서 가져온 3번째 */
 /* 정해진 영영보다 크게 100%를 주게되면 제목자리 때문에 그만큼 밀려서 표현, 그래서 90%를 줌    */
@@ -233,6 +260,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    margin-top: 15px;
 }
 
 #now_ridi_content .swiper {
@@ -289,9 +317,8 @@ header {
 
 #best {
     width: 931px;
-    height: 395px;
+    height: 500px;
     display: flex;
-    flex-wrap: wrap;
 }
 
 #best .container {
@@ -306,6 +333,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    
 }
 
 /* 사이즈가 작아서 생긴 문제 */
@@ -313,7 +341,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     width: 931px;
-    height: 330px;
+    height: 480px;
     justify-content: space-around;
 
 }
@@ -321,16 +349,65 @@ header {
 #best .best {
     display: flex;
     width: 33%;
-    height: 100px;
-    background-color: blue;
+    height: 150px;
     margin-top: 3px;
 }
 
+#best .best_image{
+    height: 100%;
+    width: 40%;
+    
+}
+#best .best_image img{
+    max-width: auto;
+    max-height: 100%;
+    border-radius: 10px;
+}
+#best_content .best_content{
+    width: 60%;
+    align-content: center;
+}
 
+#best .best_title h3{
+overflow: hidden;
+    /* 있어야 가려짐 */
+    text-align: left;
+    width: 174px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
+}
+#best .best_author p{
+    font-size: 17px;
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    text-align: left;
+    width: 174px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
+}
+#best .best_rating span:nth-child(1){
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+
+
+#best .best_rating span:nth-child(2){
+    font-size: 14px;
+}
 
 #new_ridi {
     width: 100%;
     height: 260px;
+    padding-top: 20px;
 }
 
 #new_ridi_contnet {
@@ -338,16 +415,65 @@ header {
     height: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 #new_ridi_contnet .new_ridi {
-    width: 33%;
-    height: 85%;
-    background-color: blue;
+    width: 32%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
+#onlyridi_img_1{
+    background-image: linear-gradient(to top, #1b2445 70%, white 30%);
+    background-position: bottom;
+    height: 67%;
+    
+}
 
+#onlyridi_img_2 img{
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
+#onlyridi_img_2{
+    background-image: linear-gradient(to top, #044464 70%, white 30%);
+    background-position: bottom;
+    height: 67%;
+    
+}
+
+#onlyridi_img_3 img{
+    height: 100%;
+        border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#onlyridi_img_3{
+    background-image: linear-gradient(to top, #273563 70%, white 30%);
+    background-position: bottom;
+    height: 67%;
+    
+}
+
+#onlyridi_img_1 img{
+    height: 100%;
+        border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.onlyridi_text p:nth-child(1){
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.onlyridi_text p:nth-child(2){
+    font-size: 13px;
+    color: #c7bdbd;
+}
 
 #new {
     width: 100%;
@@ -366,6 +492,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 #new .swiper {
@@ -554,6 +681,7 @@ header {
     height: 35px;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 #best_inweek_content {
@@ -577,6 +705,7 @@ header {
     height: 35px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 #event_content {
@@ -642,7 +771,7 @@ header {
 }
 
 #now_ridi_content .swiper-slide {
-    height: 90%;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
 }
@@ -650,7 +779,9 @@ header {
 #now_ridi .now_ridi_content_img{
     height:50%;
 }
-
+#now_ridi .container{
+    height: 92%;
+}
 #now_ridi p{
     font-size: 16px;
     overflow: hidden;
@@ -717,11 +848,23 @@ footer {
     padding: 0px 10px;
 }
 
-.list li {
-    padding: 0px 10px;
-}
-
-#ridi_inform {
+#ridi_inform_btn {
     border: none;
     background-color: white;
+    cursor: pointer;
+}
+.fa-facebook-f{
+padding-right: 30px;
+}
+.fa-instagram{
+padding-right: 30px;
+}
+.fa-x-twitter{
+padding-right: 30px;
+}
+.fa-youtube{
+padding-right: 30px;
+}
+.fa-tiktok{
+padding-right: 30px;
 }
