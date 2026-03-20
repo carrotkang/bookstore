@@ -104,6 +104,11 @@ header {
     margin: 0 auto;
 }
 
+#slide_1 .swiper-slide {
+    object-fit: contain;
+}
+
+
 /* 스와이퍼에서 가져온 css */
 .swiper {
     width: 100%;
@@ -113,13 +118,17 @@ header {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #444;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .swiper-slide img {
+    display: block;
+    object-fit: cover;
+}
+
+#slide_2 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -128,30 +137,97 @@ header {
 
 /* 스와이퍼에서 가져온 2번째 scc */
 #slide_2 .swiper {
-      width: 100%;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #slide_2 .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #333;
-      height: calc((100% - 20px) / 3) !important;
+    text-align: center;
+    height: calc((100% - 20px) / 3) !important;
 
-      /* Center slide text vertically */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#slide_2 .slide_2_img {
+    height: 100%;
+    width: 25%;
+    object-fit: cover;
+}
+
+#slide_2 .slide_2_img img {
+    border-radius: 10px;
+}
+
+#slide_2 .slide_2_rank {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#slide_2 .slide_2_content {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.slide_2_content_title h5 {
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    text-align: left;
+    width: 174px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
+}
+
+
+.slide_2_content_content p {
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    text-align: left;
+    width: 174px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
+}
+
+.slide_2_content_content_2 p {
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    text-align: left;
+    width: 174px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/}
+
 /* 스와이퍼에서 가져온 3번째 */
 /* 정해진 영영보다 크게 100%를 주게되면 제목자리 때문에 그만큼 밀려서 표현, 그래서 90%를 줌    */
-#today_ridi .swiper{
+#today_ridi .swiper {
     height: 90%;
 }
 
-#now_ridi_title{
+#now_ridi_title {
     width: 100%;
     height: 35px;
     display: flex;
@@ -159,7 +235,7 @@ header {
     margin: 0 auto;
 }
 
-#now_ridi_content .swiper{
+#now_ridi_content .swiper {
     width: 100%;
     height: 100%;
 }
@@ -197,9 +273,11 @@ header {
 
 #slide_2 {
     width: 100%;
-    height: 310px;
+    height: 350px;
     margin-bottom: 35px;
 }
+
+
 
 #today_ridi {
     width: 100%;
@@ -221,15 +299,17 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#best_title{
+
+#best_title {
     width: 100%;
     height: 35px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
+
 /* 사이즈가 작아서 생긴 문제 */
-#best_content{
+#best_content {
     display: flex;
     flex-wrap: wrap;
     width: 931px;
@@ -238,7 +318,7 @@ header {
 
 }
 
-#best .best{
+#best .best {
     display: flex;
     width: 33%;
     height: 100px;
@@ -253,14 +333,14 @@ header {
     height: 260px;
 }
 
-#new_ridi_contnet{
+#new_ridi_contnet {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-#new_ridi_contnet .new_ridi{
+#new_ridi_contnet .new_ridi {
     width: 33%;
     height: 85%;
     background-color: blue;
@@ -271,7 +351,7 @@ header {
 
 #new {
     width: 100%;
-    height: 370px;
+    height: 300px;
 }
 
 #new .container {
@@ -287,21 +367,117 @@ header {
     justify-content: space-between;
     margin: 0 auto;
 }
-#new .swiper{
+
+#new .swiper {
     height: 90%;
 }
 
-#best_inweek_content .swiper{
+#new .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 170px;
+}
+
+#new .new_content {
+    width: 100%;
+    text-align: left;
+}
+
+#new .new_image img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#new .new_content p {
+    font-size: 16px;
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    text-align: left;
+    width: 174px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
+}
+
+#new .new_content h4 {
+    font-size: 18px;
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    text-align: left;
+    width: 150px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
+}
+
+#new .new_content p {
+    font-size: 16px;
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    text-align: left;
+    width: 150px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
+}
+
+#best_inweek_content .swiper {
     height: 90%;
 }
 
+#best_inweek_content .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 170px;
+}
+
+.best_inweek_content_content{
+    width: 100%;
+    text-align: center;
+}
+
+#best_inweek_content h3{
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    width: 170px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
+}
+
+#best_inweek_content p{
+    font-size: 16px;
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    width: 140px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
+}
 
 #space {
     width: 100%;
     height: 465px;
 }
 
-#space_title{
+#space_title {
     width: 100%;
     height: 35px;
     display: flex;
@@ -309,7 +485,7 @@ header {
     margin: 0 auto;
 }
 
-#space_content{
+#space_content {
     display: flex;
     flex-wrap: wrap;
     width: 931px;
@@ -318,59 +494,74 @@ header {
 
 }
 
-#space .space{
+#space .space {
     display: flex;
     width: 19%;
     height: 100%;
 }
 
-#space_content div:nth-child(1){
+#space_content div:nth-child(1) {
     background-image: url("../img/space_1.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
-#space_content div:nth-child(2){
+#space_content div:nth-child(2) {
     background-image: url("../img/space_2.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
-#space_content div:nth-child(3){
+
+#space_content div:nth-child(3) {
     background-image: url("../img/space_3.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
-#space_content div:nth-child(4){
+
+#space_content div:nth-child(4) {
     background-image: url("../img/space_4.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
-#space_content div:nth-child(5){
+
+#space_content div:nth-child(5) {
     background-image: url("../img/space_5.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
+
+.space {
+    text-align: center;
+}
+
 #best_inweek {
     width: 100%;
     height: 375px;
 }
 
-#best_inweek_title{
+#best_inweek_title {
     width: 100%;
     height: 35px;
     display: flex;
     justify-content: space-between;
 }
-#best_inweek_content{
+
+#best_inweek_content {
     width: 100%;
     height: 100%;
 }
-#best_inweek_content .swiper-slide{
+
+#best_inweek_content .swiper-slide {
     height: 100%;
 }
 
@@ -381,43 +572,44 @@ header {
 }
 
 
-#event_title{
+#event_title {
     width: 100%;
     height: 35px;
     display: flex;
     justify-content: space-between;
 }
 
-#event_content{
+#event_content {
     width: 100%;
     height: 70%;
     display: flex;
     justify-content: space-between;
 }
 
-.event_content{
+.event_content {
     width: 33%;
     height: 100%;
     position: relative;
 }
 
-.image_txt_1{
+.image_txt_1 {
     top: 7%;
-    left:4%;
+    left: 4%;
     color: white;
     position: absolute;
     font-size: 13px;
     font-weight: bold;
 }
 
-.image_txt_2{
+.image_txt_2 {
     top: 60%;
     left: 4%;
     color: #c7bdbd;
     position: absolute;
     font-size: 7px;
 }
-.image_txt_3{
+
+.image_txt_3 {
     top: 30%;
     left: 4%;
     color: white;
@@ -426,7 +618,7 @@ header {
     font-weight: bold;
 }
 
-.event_content img{
+.event_content img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -440,17 +632,47 @@ header {
     height: 420px;
 }
 
-#now_ridi .swiper-wrapper{
-    width:931px;
+#now_ridi .swiper-wrapper {
+    width: 931px;
     height: 100%;
 }
 
-#now_ridi_content{
+#now_ridi_content {
     height: 100%;
 }
 
-#now_ridi_content .swiper-slide{
+#now_ridi_content .swiper-slide {
     height: 90%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#now_ridi .now_ridi_content_img{
+    height:50%;
+}
+
+#now_ridi p{
+    font-size: 16px;
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    width: 140px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
+}
+
+#now_ridi h4{
+    font-size: 18px;
+    overflow: hidden;
+    /* 있어야 가려짐 */
+    width: 140px;
+    /* 보이고싶은 만큼의 크기 */
+    text-overflow: ellipsis;
+    /* 글자가 넘치는 경우 ... 처리 */
+    white-space: nowrap;
+    /* 글자가 아무리 넘쳐도 1줄 안에 되게 ※displayflex:nowrap 같이*/
 }
 
 footer {
