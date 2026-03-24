@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>도서 전자책-리디</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.0.0/css/all.css">
+    
+    
 </head>
 
 <body>
     <header>
         <div id="header_top">
             <div class="container">
-                <div id="logo"><svg>
-                        viewBox="0 0 66 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="fig-1so0vu4">
+                <a href="#"><div id="logo"><svg>
+                        viewBox="0 0 66 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="fig-1so0vu4"
                         <path
                             d="M20.29 8.281v.063c0 3.306-1.612 5.8-4.546 7.08l5.608 8.155h-6.8l-4.778-7.098H5.787v7.103H0V.52h11.444c5.457 0 8.845 2.974 8.845 7.76zm-9.167 3.454c2.076 0 3.317-1.45 3.317-3.138v-.062c0-2.258-1.853-3.17-3.411-3.17H5.787v6.37h5.336zM24.37.52h5.786v23.063h-5.786V.52zm20.668 0H34.39v23.063h10.65c7.117 0 10.73-4.85 10.73-11.53v-.061C55.77 5.343 52.156.52 45.04.52zm4.724 11.592c0 3.697-1.63 6.448-5.384 6.448h-4.202V5.54h4.202c3.755 0 5.385 2.774 5.385 6.511v.063zM58.94.52h5.786v23.063H58.94V.52z"
                             fill="#1E9EFF"></path>
-                    </svg></div>
+                    </svg></div></a>
                 <div id="login">
                     <div id="search">
                         <img src="./img/magnifying-glass-solid-full.svg">
@@ -39,13 +40,13 @@
                         <li><a href="#">만화</a></li>
                         <li><a href="#">웹소설</a></li>
                         <li><a href="#">도서</a></li>
-                        <li><a href="#">셀렉트</a></li>
+                        <li><a href="#">셀렉트<i class="fa-solid fa-book"></i></a></li>
                     </ul>
                 </nav>
                 <nav>
                     <ul class="list">
-                        <li><a href="#">전체 카테고리</a></li>
-                        <li><a href="#">캐쉬충전</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bars"></i>전체 카테고리</a></li>
+                        <li><a href="#"><i class="fa-solid fa-coins"></i>캐쉬충전</a></li>
                     </ul>
                 </nav>
             </div>
@@ -55,9 +56,10 @@
 
 
     <main>
+        
         <div id="main_content">
             <div class="container">
-
+                <button id="top-btn"> ▲ <br/> TOP </button >
                 <nav id="nav_main">
                     <ul class="list">
                         <li><a href="#">추천</a></li>
@@ -75,19 +77,116 @@
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/select_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>책 편식가를 위한?<br>SELECT 다이닝</p>
+                                <span>추천 책 읽으면 추첨 1,000포인트 증정!</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/discount_10_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>라이언 고슬링 주연 영화<br>프로젝트 헤일메리 원작</p>
+                                <span>리뷰 쓰면 최대 4,000포인트 증정!</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/discount_50_v2.260219.png"></div>
+                            <div class="slide_2_sale"><img src="https://active.ridibooks.com/badge/carousel/select_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>미미여사<레벨 세븐><br>리디벨렉스 오픈!</p>
+                                <span>일본 의료사상 최악의 사건 모티브 사회파미스터리</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/new_v2.260219.png"></div>
+                            <div class="slide_2_sale"><img src="https://active.ridibooks.com/badge/carousel/select_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>본격 미스터리 대상!<br>
+                                    <매미 돌아오다>
+                                </p>
+                                <span>월 4,900원 리디셀렉트에서 감상해보세요</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/only_v2.260219.png"></div>
+                            <div class="slide_2_sale"><img src="https://active.ridibooks.com/badge/carousel/select_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>"누군가가 내딸을<br>키우고 있었다..."</p>
+                                <span>넷플릭스 오리지널 시리즈 원작 <스노우 걸></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/new_v2.260219.png"></div>
+                            <div class="slide_2_sale"><img src="https://active.ridibooks.com/badge/carousel/discount_10_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>충동과 과잉의 시대<br>절제가 인격이다</p>
+                                <span>뇌과학X스토아철학으로 읽는 AI시대 생존법</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/select_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>책 편식가를 위한?<br>SELECT 다이닝</p>
+                                <span>추천 책 읽으면 추첨 1,000포인트 증정!</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/discount_10_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>라이언 고슬링 주연 영화<br>프로젝트 헤일메리 원작</p>
+                                <span>리뷰 쓰면 최대 4,000포인트 증정!</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/discount_50_v2.260219.png"></div>
+                            <div class="slide_2_sale"><img src="https://active.ridibooks.com/badge/carousel/select_v2.260219.png"></div><img>
+                            <div class="main_txt">
+                                <p>미미여사<레벨 세븐><br>리디벨렉스 오픈!</p>
+                                <span>일본 의료사상 최악의 사건 모티브 사회파미스터리</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/new_v2.260219.png"></div>
+                            <div class="slide_2_sale"><img src="https://active.ridibooks.com/badge/carousel/select_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>본격 미스터리 대상!<br>
+                                    <매미 돌아오다>
+                                </p>
+                                <span>월 4,900원 리디셀렉트에서 감상해보세요</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/only_v2.260219.png"></div>
+                            <div class="slide_2_sale"><img src="https://active.ridibooks.com/badge/carousel/select_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>"누군가가 내딸을<br>키우고 있었다..."</p>
+                                <span>넷플릭스 오리지널 시리즈 원작 <스노우 걸></span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_1_sale"><img src="https://active.ridibooks.com/badge/carousel/new_v2.260219.png"></div>
+                            <div class="slide_2_sale"><img src="https://active.ridibooks.com/badge/carousel/discount_10_v2.260219.png"></div>
+                            <img>
+                            <div class="main_txt">
+                                <p>충동과 과잉의 시대<br>절제가 인격이다</p>
+                                <span>뇌과학X스토아철학으로 읽는 AI시대 생존법</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
 
@@ -391,10 +490,10 @@
                     <div id="best_content">
                         <div class="best">
                             <div class="best_image"><img src="./img/best1.webp"></div>
+                            <div class="best_rank">1</div>
                             <div class="best_content">
                                 <div class="best_title">
-                                    <h3>
-                                        프로젝트 헤일메리</h3>
+                                    <h3>프로젝트 헤일메리</h3>
                                 </div>
                                 <div class="best_author">
                                     <p>앤디 위어 외 1명</p>
@@ -407,6 +506,7 @@
                         </div>
                         <div class="best">
                             <div class="best_image"><img src="./img/best2.webp"></div>
+                            <div class="best_rank">2</div>
                             <div class="best_content">
                                 <div class="best_title">
                                     <h3>시간관리국</h3>
@@ -419,6 +519,7 @@
                         </div>
                         <div class="best">
                             <div class="best_image"><img src="./img/best3.webp"></div>
+                            <div class="best_rank">3</div>
                             <div class="best_content">
                                 <div class="best_title">
                                     <h3>인생을 위한 최소한의 생각</h3>
@@ -434,6 +535,7 @@
                         </div>
                         <div class="best">
                             <div class="best_image"><img src="./img/best4.webp"></div>
+                            <div class="best_rank">4</div>
                             <div class="best_content">
                                 <div class="best_title">
                                     <h3>괴테는 모든 것을 말했다</h3>
@@ -448,6 +550,7 @@
                         </div>
                         <div class="best">
                             <div class="best_image"><img src="./img/best5.webp"></div>
+                            <div class="best_rank">5</div>
                             <div class="best_content">
                                 <div class="best_title">
                                     <h3>웹툰단행본 편집 가이드북</h3>
@@ -462,6 +565,7 @@
                         </div>
                         <div class="best">
                             <div class="best_image"><img src="./img/best6.webp"></div>
+                            <div class="best_rank">6</div>
                             <div class="best_content">
                                 <div class="best_title">
                                     <h3>개정판 | 내 심장을 쏴라</h3>
@@ -476,6 +580,7 @@
                         </div>
                         <div class="best">
                             <div class="best_image"><img src="./img/best7.webp"></div>
+                            <div class="best_rank">7</div>
                             <div class="best_content">
                                 <div class="best_title">
                                     <h3>돈의 방정식</h3>
@@ -490,6 +595,7 @@
                         </div>
                         <div class="best">
                             <div class="best_image"><img src="./img/best8.webp"></div>
+                            <div class="best_rank">8</div>
                             <div class="best_content">
                                 <div class="best_title">
                                     <h3>돈의 심리학</h3>
@@ -504,6 +610,7 @@
                         </div>
                         <div class="best">
                             <div class="best_image"><img src="./img/best9.webp"></div>
+                            <div class="best_rank">9</div>
                             <div class="best_content">
                                 <div class="best_title">
                                     <h3>레벨 세븐</h3>
@@ -637,11 +744,50 @@
                         <h2>짧지만 강렬한 서사, 우주라이크 소설</h2>
                     </div>
                     <div id="space_content">
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <div class="space"></div>
+                        <div class="space">
+                            <div class="space_back">
+                                <div class="space_back_2"
+                                    style="background-image:linear-gradient(to top, rgba(76, 50, 126, 1), rgba(76, 50, 126, 0)),linear-gradient(to top, rgba(76, 50, 126, 1), rgba(76, 50, 126, 0))">
+                                <div><img src="./img/비밀의색.webp"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space">
+                            <div class="space_back">
+                                <div class="space_back_2"
+                                    style="background-image:linear-gradient(to top, rgba(198, 148, 91, 1), rgba(198, 148, 91, 0)),linear-gradient(to top, rgba(198, 148, 91, 1), rgba(198, 148, 91, 0))">
+                                <div><img src="./img/한잔의마음.webp"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="space">
+                            <div class="space_back">
+                                <div class="space_back_2"
+                                    style="background-image:linear-gradient(to top, rgba(41, 40, 188, 1), rgba(41, 40, 188, 0)),linear-gradient(to top, rgba(41, 40, 188, 1), rgba(41, 40, 188, 0))">
+                                <div><img src="./img/없는곳에존재하는.webp"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="space">
+                            <div class="space_back">
+                                <div class="space_back_2"
+                                    style="background-image:linear-gradient(to top, rgba(126, 4, 62, 1), rgba(126, 4, 62, 0)),linear-gradient(to top, rgba(126, 4, 62, 1), rgba(126, 4, 62, 0))">
+                                <div><img src="./img/나경의팔자.webp"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="space">
+                            <div class="space_back">
+                                <div class="space_back_2"
+                                    style="background-image:linear-gradient(to top, rgba(6, 59, 75, 1), rgba(6, 59, 75, 0)),linear-gradient(to top, rgba(6, 59, 75, 1), rgba(6, 59, 75, 0))">
+                                <div><img src="./img/태초의빛.webp"></div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -926,21 +1072,21 @@
                 </div>
             </div>
             <div id="footer_right">
-                <i class="fa-brands fa-facebook-f"><a href=""></a></i>
-                <i class="fa-brands fa-instagram"><a href=""></a></i>
-                <i class="fa-brands fa-x-twitter"><a href=""></a></i>
-                <i class="fa-brands fa-youtube"><a href=""></a></i>
-                <i class="fa-brands fa-tiktok"><a href=""></a></i>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
             </div>
         </div>
 
         <div id="footer_bottom">
             <button id="ridi_inform_btn" value='toggleDiv' onclick='toggleDiv()'>리디(주) 사업자 정보<i
                     class="fa-solid fa-angle-down"></i></button>
-                    <div id='ridi_inform_text' style="display: none;">
-                        대표자 배기식 | 사업자 등록번호 120-87-27435 | 통신판매업 신고번호 제 2009-서울강남 35-02139호<br>
-                        <a href="#">이메일 help@ridi.com</a> | 대표전화 1644-0331 | 주소 서울시 강남구 역삼동 702-28 어반벤치빌딩 4,10,11층(테헤란로 325)
-                    </div>
+            <div id='ridi_inform_text' style="display: none;">
+                대표자 배기식 | 사업자 등록번호 120-87-27435 | 통신판매업 신고번호 제 2009-서울강남 35-02139호<br>
+                <a href="#">이메일 help@ridi.com</a> | 대표전화 1644-0331 | 주소 서울시 강남구 역삼동 702-28 어반벤치빌딩 4,10,11층(테헤란로 325)
+            </div>
             <ul id="copyright">
                 <li><a href="#">이용약관</a></li>
                 <li><a href="#">개인정보 처리방침</a></li>
@@ -952,262 +1098,9 @@
 
 
     </footer>
-
-    <script>
-        function toggleDiv() {
-            const div = document.getElementById('ridi_inform_text');
-
-            if (div.style.display === 'none') {
-                div.style.display = 'block';
-            } else {
-                div.style.display = 'none';
-            }
-        } 
-    </script>
-
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper_1 = new Swiper("#slide_1 .mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: "#slide_1 .swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false
-            },
-
-        });
-    </script>
-
-    <script>
-        var swiper_2 = new Swiper("#slide_2 .mySwiper", {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-            grid: {
-                rows: 3,
-            },
-            spaceBetween: 5,
-
-            pagination: {
-                el: "#slide_2 .swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: "#slide_2 .swiper-button-next",
-                prevEl: "#slide_2 .swiper-button-prev",
-            },
-        });
-    </script>
-
-    <script>
-        var swiper_3 = new Swiper("#today_ridi .mySwiper", {
-            slidesPerView: 6,
-            grid: {
-                rows: 1,
-            },
-            spaceBetween: 5,
-
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false
-            },
-
-        });
-    </script>
-
-    <script>
-        var swiper_4 = new Swiper("#new .mySwiper", {
-            slidesPerView: 6,
-            grid: {
-                rows: 1,
-            },
-            spaceBetween: 5,
-
-            pagination: {
-                el: "#new .swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: "#new .swiper-button-next",
-                prevEl: "#new .swiper-button-prev",
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false
-            },
-        });
-    </script>
-
-    <script>
-        var swiper_5 = new Swiper("#best_inweek_content .mySwiper", {
-            navigation: {
-                nextEl: "#best_inweek_content .swiper-button-next",
-                prevEl: "#best_inweek_content .swiper-button-prev",
-            },
-            pagination: {
-                el: "#best_inweek_content .swiper-pagination",
-                clickable: true,
-            },
-            slidesPerView: 5,
-            grid: {
-                rows: 1,
-            },
-            spaceBetween: 5,
-            slidesPerGroup: 5,
-        });
-    </script>
-
-    <script>
-        var swiper_6 = new Swiper("#now_ridi_content .mySwiper", {
-            slidesPerView: 6,
-            grid: {
-                rows: 1,
-            },
-            spaceBetween: 5,
-            slidesPerGroup: 6,
-            pagination: {
-                el: "#new .swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: "#now_ridi_content .swiper-button-next",
-                prevEl: "#now_ridi_content .swiper-button-prev",
-            },
-        });
-    </script>
-
-
-
-
-
-    <script>
-        async function fetchBooks(query, size) {
-            const REST_API_KEY = '1bdb360b7c5be45b3bd01b0821694861';
-            const params = new URLSearchParams({
-                target: 'title',
-                query,
-                size,
-            });
-            const url = `https://dapi.kakao.com/v3/search/book?${params}`;
-
-            const response = await fetch(url, {
-                method: "GET",
-                headers: {
-                    Authorization: `KakaoAK ${REST_API_KEY}`
-                }
-            });
-            if (!response.ok) {
-                throw new Error(`HTTP 오류: ${response.status}`);
-            }
-
-            return response.json();
-        }
-
-
-        async function bookData() {
-            try {
-                const queries = [
-                    { query: "best", size: 9 },
-                    { query: "시험", size: 18 },
-                    { query: "오늘", size: 12 },
-                    { query: "new", size: 9 },
-                    { query: "famous", size: 10 },
-                    { query: "now", size: 12 }
-                ]
-                for (let i = 0; i < queries.length; i++) {
-                    query = queries[i].query;
-                    size = queries[i].size;
-                    let data = await fetchBooks(query, size);
-
-                    if (i == 0) {
-                        //#slide_1번째
-                        let div = document.querySelectorAll("#slide_1 .swiper-slide")
-                        // console.log(div)             
-                        for (let j = 0; j < 9; j++) {
-                            let doc = data.documents[j];
-                            div[j].innerHTML = `<img src="${doc.thumbnail}">`;
-                        }
-                    } else if (i == 1) {
-                        //#slide_2 ..swiper-slide 
-                        let div_img = document.querySelectorAll("#slide_2 .swiper-slide .slide_2_img")
-                        let div_title = document.querySelectorAll("#slide_2 .swiper-slide .slide_2_content_title")
-                        let div_author = document.querySelectorAll("#slide_2 .swiper-slide .slide_2_content_content")
-                        let div_price = document.querySelectorAll("#slide_2 .swiper-slide .slide_2_content_content_2")
-                        for (let j = 0; j < 18; j++) {
-                            let doc = data.documents[j];
-                            div_img[j].innerHTML = `<img src="${doc.thumbnail}">`;
-                            div_title[j].innerHTML = `<h5>${doc.title}</h5>`;
-                            div_author[j].innerHTML = `<p>${doc.authors}`;
-                            // 콤마넣기
-                            doc.price = doc.price.toLocaleString('ko-KR');
-                            div_price[j].innerHTML = `<p>${doc.price}원`;
-                        }
-                    } else if (i == 2) {
-                        let div_img = document.querySelectorAll("#today_ridi .swiper-slide")
-                        for (let j = 0; j < 12; j++) {
-                            let doc = data.documents[j];
-                            console.log(doc)
-                            div_img[j].innerHTML = `<img src="${doc.thumbnail}">`;
-                        }
-                    } else if (i == 3) {
-                        let div_img = document.querySelectorAll("#new .swiper-slide .new_image")
-                        let div_title = document.querySelectorAll("#new .swiper-slide .new_title")
-                        let div_author = document.querySelectorAll("#new .swiper-slide .new_author")
-                        for (let j = 0; j < 9; j++) {
-                            let doc = data.documents[j];
-                            div_img[j].innerHTML = `<img src="${doc.thumbnail}">`;
-                            div_title[j].innerHTML = `<h4>${doc.title}</h4>`;
-                            div_author[j].innerHTML = `<p>${doc.authors}`;
-                        }
-                    } else if (i == 4) {
-                        let div_img = document.querySelectorAll("#best_inweek_content .swiper-slide .best_inweek_content_image")
-                        let div_title = document.querySelectorAll("#best_inweek_content .swiper-slide .best_inweek_content_title")
-                        let div_author = document.querySelectorAll("#best_inweek_content .swiper-slide .best_inweek_content_author")
-                        let div_price = document.querySelectorAll("#best_inweek_content .swiper-slide .best_inweek_content_price")
-                        for (let j = 0; j < 10; j++) {
-                            let doc = data.documents[j];
-                            div_img[j].innerHTML = `<img src="${doc.thumbnail}">`;
-                            div_title[j].innerHTML = `<h3>${doc.title}</h3>`;
-                            div_author[j].innerHTML = `<p>${doc.authors}`;
-                            doc.price = doc.price.toLocaleString('ko-KR');
-                            div_price[j].innerHTML = `<p>${doc.price}원`;
-                        }
-                    } else if (i == 5) {
-                        let div_img = document.querySelectorAll("#now_ridi_content .swiper-slide .now_ridi_content_img")
-                        let div_title = document.querySelectorAll("#now_ridi_content .swiper-slide .now_ridi_content_title")
-                        let div_author = document.querySelectorAll("#now_ridi_content .swiper-slide .now_ridi_content_author")
-                        let div_price = document.querySelectorAll("#now_ridi_content .swiper-slide .now_ridi_content_price")
-                        for (let j = 0; j < 12; j++) {
-                            let doc = data.documents[j];
-                            div_img[j].innerHTML = `<img src="${doc.thumbnail}">`;
-                            div_title[j].innerHTML = `<h4>${doc.title}</h4>`;
-                            div_author[j].innerHTML = `<p>${doc.authors}`;
-                            doc.price = doc.price.toLocaleString('ko-KR');
-                            div_price[j].innerHTML = `<p>${doc.price}원`;
-                        }
-                    }
-                }
-
-            } catch (error) {
-                console.log('에러발생', error)
-            }
-
-
-        }
-        bookData();
-
-
-    </script>
-
-
+    <script type="text/javaScript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javaScript" src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>>
+    <script type="text/javaScript"src="./js/main.js"></script>
 </body>
 
 </html>
