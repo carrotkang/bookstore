@@ -16,3 +16,206 @@ a {
     text-decoration: none;
     color: #333;
 }
+
+
+.container {
+    width: 931px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+}
+
+nav ul li:hover{
+    background-color: #1e9eff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav ul li:hover a{color: white;}
+
+nav ul li{
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+#header_top {
+    width: 100%;
+    height: 55px;
+    /* background-color: #eee; */
+}
+
+#login {
+    width: 320px;
+    height: 35px;
+    /* background-color: green; */
+    align-items: end;
+    display: flex;
+}
+
+#login a{
+ font-size: 15px;
+}
+
+#search {
+    height: 26px;
+    background-color: #c7bdbd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#search img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#search_box:focus {
+    outline: none;
+}
+
+#search_box {
+    background-color: #c7bdbd;
+    border-width: 0;
+}
+
+#logo {
+    width: 65px;
+    height: 25px;
+    margin-left: 7px;
+    text-align: center;
+}
+
+#logo svg{
+    width: 100%;
+    height: 100%;
+}
+
+#header_bottom {
+    width: 100%;
+    height: 55px;
+    /* background-color: tomato; */
+    display: flex;
+    border-bottom: 1px solid #c7bdbd;
+}
+
+#header_top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_bottom .container nav {
+    display: flex;
+    justify-content: space-between;
+}
+#top-btn { 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    background-color: white;
+    border: 2px solid #dbdbdb;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+}
+
+
+footer {
+    width: 931px;
+    height: 200px;
+    /* background-color: #d17070; */
+    margin: 0 auto;
+}
+
+#footer_top {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_left {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_list_title{
+    font-weight: bold;
+}
+Andy_Weir
+.footer_list_content{
+    margin-top: 10px;
+}
+.footer_comunity{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+#footer_bottom {
+    width: 100%;
+    height: 70px;
+    /* background-color: #eee; */
+}
+
+#footer_left {
+    font-size: 14px;
+}
+
+#footer_left a:hover{
+    color: gray;
+}
+
+#footer_bottom {
+    font-size: 12px;
+}
+
+#copyright {
+    display: flex;
+}
+
+#copyright li {
+    padding: 0px 10px;
+}
+
+#ridi_inform_btn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.fa-facebook-f{
+padding-right: 30px;
+}
+.fa-instagram{
+padding-right: 30px;
+}
+.fa-x-twitter{
+padding-right: 30px;
+}
+.fa-youtube{
+padding-right: 30px;
+}
+.fa-tiktok{
+padding-right: 30px;
+}
+
+.list {
+    display: flex;
+}
