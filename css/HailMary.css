@@ -1,1 +1,210 @@
 @charset "utf-8";
+main{
+    width: 931px;
+margin: 0 auto;
+}
+
+#page_detail{
+    margin-top: 50px;
+}
+
+.detail_body_wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.book_thumbnail{
+    height: 450px;
+    width: 25%;
+}
+.detail_body{
+    width: 100%;
+}
+
+.book_category_list{
+    display: flex;
+}
+.book_star_list{
+    display: flex           ;
+}
+.book_info_list{
+    display: flex;
+}
+#book_category_sub::after{
+    content: " | ";
+      margin-left: 5px;
+    margin-right: 5px;
+}
+#event_list{
+    border-bottom: 1px solid #ccc;
+    line-height: 40px;
+   margin-bottom: 10px;
+}
+#event_list_2{
+    line-height: 20px;
+     margin-bottom: 10px;
+}
+#event_ul{
+    display: flex;
+    flex-direction: column;
+}
+.event{
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      margin-top: 10px;
+
+      
+}
+#book_star_list_front::after{
+    content: " | ";
+      margin-left: 5px;
+    margin-right: 5px;
+}
+#book_info_list_front::after{
+    content: " | ";
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.detail_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.book_price{
+    margin-top: 25px;
+
+}
+.book_price_main{
+    border-bottom:  1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+
+.book_price_main{
+    display: flex;
+}
+.book_price_title{
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.book_price_date{
+    margin-top: 5px;
+    text-align: end;
+}
+.book_collect{
+     text-align: end;
+     margin-top: 30px;
+}
+.book_price_content{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.book_main_info{
+    width: 75%;
+}
+.book_price_wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10px;
+}
+.book_category{
+    width: 100%;
+}
+
+.detail_Metadata{
+    background-color: #ccc;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: gray;
+}
+.file_info{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.isbn{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.uci{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.blank_1{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.blank_2{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.enviroment{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.published_info{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.listen{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.detail_Metadata_title{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 25%;
+}
+.detail_Metadata_info{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 35px;
+}
+.introduction{
+    background-color: bisque;
+     width: 100%;
+}
+.introduction_title{
+    font-size: 24px;
+}
+.sub_1{
+    width: 33%;
+    height: 50px;
+}
+.sub_2{
+    width: 33%;
+    height: 50px;
+}
+.sub_3{
+    width: 33%;
+    height: 50px;
+}
+.author{
+    background-color: blueviolet;
+     width: 100%;
+}
+.other_books_ul{
+    display: flex;
+}
